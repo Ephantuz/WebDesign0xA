@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: #d6dde4;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  text-align: center;
+  margin: 50px auto 120px;
+  color: #fff;
+}
+.container .services-section {
+  min-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .services-section .card {
+  width: 350px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  margin: 0 15px;
+  border-radius: 20px;
+  z-index: 10;
+  transition: transform 0.8s;
+}
+.services-section .card .icon {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 80px;
+  border-radius: 50%;
+  color: #007bff;
+  border: 20px solid #007bff;
+  margin: -75px auto 0;
+  transition: transform 1s;
+}
+
+.services-section .card h2 {
+  height: 35px;
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 25px auto;
+  position: relative;
+  background: #fff;
+  line-height: 35px;
+}
+.services-section .card h2:after {
+  content: '';
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, #fff, #007bff);
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: -1;
+}
+.services-section .card h2:before {
+  content: '';
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, #007bff, #fff);
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+.services-section .card p {
+  font-size: 16px;
+  margin: 35px 20px;
+}
+.services-section .card:hover {
+  transform: translateY(-20px);
+}
+.services-section .card:hover .icon {
+  transform: rotate(360deg);
+}
